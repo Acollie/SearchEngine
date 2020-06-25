@@ -1,0 +1,6 @@
+database:
+  username: root
+  password: root
+  host: localhost
+  port: 8889
+  datbase_name: SearchEngine
