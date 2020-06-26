@@ -1,0 +1,32 @@
+{
+  "name": "searchengine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Acollie/SearchEngine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Acollie/SearchEngine/issues"
+  },
+  "homepage": "https://github.com/Acollie/SearchEngine#readme",
+  "dependencies": {
+    "@vue/cli": "^4.4.1",
+    "bookshelf": "^1.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "mysql": "^2.18.1",
+    "yaml": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^26.1.0"
+  }
+}
