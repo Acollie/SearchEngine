@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    Search box :<input v-model="search_box" placeholder="Search here">
-    <button @click="this.sent_data">Go!</button>
+    <div id="search_box">
+      Search box :<input v-model="search_box" placeholder="Search here">
+      <button @click="this.sent_data">Go!</button>
+    </div>
     <div v-for="x in response" v-bind:key="x.title">
       <Result v-bind:page_title="x.title" v-bind:url="x.url" v-bind:body="x.body"></Result>
     </div>
     <div v-if="server_status==2">
-      <p>No results :| </p>
+      <p>0 results </p>
     </div>
     <div v-if="server_status==0">
       <p>There was an error</p>
     </div>
+    <div id="footer">
+      This is an experimental project to create an open source search engine.
+    </div>
   </div>
+
 </template>
 
 <script>
@@ -44,7 +50,6 @@ export default {
           this.server_status=res.status
         }
         this.response=res.response
-
       })
     }
   },
@@ -60,6 +65,16 @@ export default {
 </script>
 
 <style>
+#footer{
+  bottom: 0px;
+  position: fixed;
+}
+#search_box{
+  left: 0px;
+  font-size: 34px;
+  text-align: left;
+  margin: 10px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

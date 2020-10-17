@@ -19,7 +19,7 @@
 
 <style scoped>
     div{
-        background-color: red;
+        background-color: #adadad;
         margin: 20px;
         text-align: left;
     }

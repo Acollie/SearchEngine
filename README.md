@@ -1,5 +1,5 @@
 # SearchEngine
-
+This is a project to create an open source search engine 
 ## Components
 ### Client
 Written in VueJS
@@ -11,15 +11,13 @@ To start client server run
 ### Server
 Middleware between Database and Client side
 - Written in Express
-
-To start run `node index.js`
-
+To start in `/server/` run `yarn serve`
 
 
 ### Web crawler
-Not written yet
+This needs to be able to index and evaluate, 
+web pages and rank them based on the usefulness to the user.
 
-A tool for indexing and evaluating pages.
 
 ## Tests
 Each component should contain their own tests node based projects run by`yarn test`
